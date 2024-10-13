@@ -8,22 +8,87 @@
     tools:context=".Ejercicio2">
 
     <View
-    android:layout_width="50dp"
-    android:layout_height="50dp"
-    android:background="@color/teal_200"
-    app:layout_constraintTop_toTopOf="parent"
-    android:id="@+id/view1"
-    />
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:id="@+id/bloque1" /> <!-- ID BLOQUE NEGRO -->
+
 
     <View
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@color/purple_200"
-        app:layout_constraintTop_toBottomOf="@id/view1"
+        android:background="@color/teal_200"
+        app:layout_constraintBottom_toTopOf="@id/bloque1"
+        app:layout_constraintEnd_toStartOf="@id/bloque1"
+
+
+
+        android:id="@+id/bloque2"/> <!-- ID BLOQUE CIAN SUPERIOR IZQUIERDA -->
+
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_200"
+        app:layout_constraintBottom_toTopOf="@id/bloque1"
+        app:layout_constraintStart_toEndOf="@id/bloque1"
+        />
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_500"
+        app:layout_constraintBottom_toTopOf="@id/bloque2"
+        app:layout_constraintStart_toEndOf="@id/bloque2"
+        />
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_200"
+        app:layout_constraintTop_toBottomOf="@id/bloque1"
+        app:layout_constraintEnd_toStartOf="@id/bloque1"
+
+        android:id="@+id/bloque3" /> <!-- Bloque inferior Izquierda cian -->
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_200"
+        app:layout_constraintStart_toEndOf="@id/bloque1"
+        app:layout_constraintTop_toBottomOf="@id/bloque1"
+
+
+
+        android:id="@+id/bloque4" /> <!-- Bloque inferior Derecha cian -->
+        />
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_500"
+        app:layout_constraintEnd_toStartOf="@id/bloque3"
+        app:layout_constraintTop_toBottomOf="@id/bloque3"
 
         />
 
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_500"
+        app:layout_constraintTop_toBottomOf="@id/bloque3"
+        app:layout_constraintStart_toEndOf="@id/bloque3"
+        />
 
-
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/purple_500"
+        app:layout_constraintStart_toEndOf="@id/bloque4"
+        app:layout_constraintTop_toBottomOf="@id/bloque4"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
-
